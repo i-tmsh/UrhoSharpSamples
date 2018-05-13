@@ -4,11 +4,9 @@
              xmlns:local="clr-namespace:HelloUrho"
              x:Class="HelloUrho.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Spacing="0">
+        <ContentView x:Name="UrhoView" VerticalOptions="FillAndExpand" BackgroundColor="Aqua"/>
+        <ContentView x:Name="PreserveView" HeightRequest="50" BackgroundColor="Gray"/>
     </StackLayout>
 
 </ContentPage>
